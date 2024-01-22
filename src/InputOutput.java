@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class InputOutput {
     public static void main(String[] args) throws IOException {
@@ -17,5 +18,12 @@ public class InputOutput {
 
         //using Scanner class
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name and height: ");
+
+        String name = scanner.next();
+        int height = scanner.nextInt();
+
+        System.out.printf("%s is %d cms tall", name, height);
     }
 }
