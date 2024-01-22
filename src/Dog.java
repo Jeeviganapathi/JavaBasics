@@ -1,4 +1,4 @@
-public class Dog {
+public class Dog extends Animal{
     private String name;
     private String breedName;
     private int age;
@@ -9,7 +9,8 @@ public class Dog {
         this.age = age;
     }
 
-    public void bark(){
-        System.out.println(this.name + " Dog is barking");
+    // It is called Method overriding.
+    public void makeNoise(){
+        System.out.println(" Dog is barking");
     }
 }
